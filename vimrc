@@ -67,3 +67,12 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Nerd Tree Tab Settings
 let g:nerdtree_tabs_open_on_console_startup=1
+:set tabstop=4 shiftwidth=4 expandtab
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""" Special EOL char
+set listchars=tab:¬\ ,eol:↵                                         " set the character for special char
+" toggle for showing eol and other char
+" nnoremap <silent> <leader>l :set list!<CR>
+:set cursorline
+:set cursorcolumn
+map <Leader> <Plug>(easymotion-prefix)
